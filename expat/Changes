@@ -8,12 +8,16 @@ Release 2.2.? ????????????????
              #82  Windows: Fix DLL hijacking vulnerability
 
         Other changes:
+             #91  Linux: Allow getrandom to fail if nonblocking pool has not
+                    yet been initialized (e.g. originally during early boot)
              #23  Test suite: Fix memory leaks
                   Rely on macro HAVE_ARC4RANDOM_BUF (rather than __CloudABI__)
                     for CloudABI
 
         Special thanks to:
+            Chanho Park
             Rhodri James
+            Simon McVittie
             Viktor Szakats
                  and
             Core Infrastructure Initiative
